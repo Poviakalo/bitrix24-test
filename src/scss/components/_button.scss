@@ -1,0 +1,31 @@
+.btn {
+  width: 150px;
+  text-align: center;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: $green;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: $boxShadow;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $lightGreen;
+  }
+  &:active {
+    background-color: $darkGreen;
+  }
+
+  &__active {
+    background-color: $red;
+    &:hover {
+      background-color: $lightRed;
+    }
+    &:active {
+      background-color: $darkRed;
+    }
+  }
+}

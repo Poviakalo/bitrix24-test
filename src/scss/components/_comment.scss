@@ -1,0 +1,76 @@
+.commentBlock {
+  background-color: $lightGray;
+  position: absolute;
+  left: -100vw;
+  height: 100vh;
+  width: 100%;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__show {
+    left: 0;
+  }
+
+  &__btn {
+    cursor: pointer;
+    color: $green;
+    position: absolute;
+    top: 93vh;
+    right: -50%;
+    transform: translate(50%);
+    &:hover {
+      color: $lightGreen;
+    }
+    &:active {
+      color: $darkGreen;
+    }
+    &-show {
+      right: 50%;
+      transform: translate(50%);
+      color: $red;
+      &:hover {
+        color: $lightRed;
+      }
+      &:active {
+        color: $darkRed;
+      }
+    }
+  }
+  &__field {
+    width: 500px;
+    height: 300px;
+    box-shadow: $boxShadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #fff;
+  }
+  .filed__input {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 30px;
+    padding: 20px;
+    resize: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: $boxShadow;
+  }
+  .filed__btn {
+    width: 90%;
+    height: 25px;
+    box-shadow: $boxShadow;
+    border: none;
+    transition: all 0.2s;
+    background-color: $green;
+    color: #fff;
+    &:hover {
+      background-color: $lightGreen;
+    }
+    &:active {
+      background-color: $darkGreen;
+    }
+  }
+}

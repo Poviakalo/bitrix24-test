@@ -1,0 +1,47 @@
+.order {
+  width: 700px;
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: $boxShadow;
+  font-family: 'Roboto', sans-serif;
+
+  &__title {
+    margin-bottom: 50px;
+    &-active {
+      color: $green;
+    }
+  }
+
+  &__form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__block {
+    width: 90%;
+    height: 100px;
+  }
+  p {
+    margin-bottom: 15px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .price {
+    width: 100px;
+  }
+  input {
+    outline: none;
+    padding-left: 10px;
+    height: 24px;
+  }
+  select {
+    height: 24px;
+  }
+}
